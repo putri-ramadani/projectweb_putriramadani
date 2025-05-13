@@ -1,0 +1,209 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: linear-gradient(to right, #6f5fff, #887bfe); 
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('images/hotel-example.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero-text h2 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #4907ff;
+  color: #333;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #2900e0;
+}
+
+/* Fasilitas Section */
+.fasilitas-section {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.fasilitas-section h3 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.fasilitas-item {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.fasilitas-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../img/hotelku.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text {
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-text h2 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: #0772ff;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0022e0;
+}
+
+.fasilitas-gambar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.fasilitas-gambar img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.fasilitas-gambar img:hover {
+  transform: scale(1.03);
+}

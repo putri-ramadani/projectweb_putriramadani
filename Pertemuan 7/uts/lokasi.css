@@ -1,0 +1,61 @@
+.lokasi-header {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  text-align: center;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.lokasi-header h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.lokasi-header p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.lokasi-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.lokasi-info {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lokasi-info h3 {
+  margin-bottom: 15px;
+  color: #0077b6;
+}
+
+.lokasi-info p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.lokasi-map iframe {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lokasi-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .lokasi-info, .lokasi-map {
+    margin-bottom: 30px;
+  }
+}
